@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<span th:text="${'ID: ' + oneproduct.id}"></span>
+<span th:text="${'title: ' + oneproduct.title}"></span>
+<span th:text="${'price: ' + oneproduct.price}"></span>
+
+<br>
+<!--
+<form th:action="@{'/products/show/' + ${oneproduct.id}}" th:object="${oneproduct}" method="post">
+
+    <input th:field="*{id}" placeholder="oneproduct.id" readonly>
+    <br>
+    <input th:field="*{title}" placeholder="oneproduct.title">
+    <br>
+    <input th:field="*{price}" placeholder="oneproduct.price">
+    <br>
+    <button type="submit">Сохранить</button>
+
+</form>
+-->
+
+
+</body>
+</html>
